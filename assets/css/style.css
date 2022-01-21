@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css2?family=Courgette&display=swap);
+
+*{  margin: 0;
+    padding: 0;
+	box-sizing: border-box;}
+
+.gradient-custom{
+    background-image: url(http://vishub.org/documents/18634/download);
+}    
+    
+.navbar navbar-light{
+    padding-bottom: 0;
+    }
+
+.container-fluid{
+    background-color: rgba(255, 255, 255, 0.548);
+    margin-bottom: -80px;
+}    
+
+.navbar-brand{
+    font-size: 40px;
+    font-family: 'Courgette', sans-serif;
+    background-color: transparent;}
+
+.container mt-5{
+    background-color: aquamarine;
+}
