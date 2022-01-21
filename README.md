@@ -1,5 +1,5 @@
 # PROYECTO 4 - Red social
-Este es un proyecto que ha sido realizado por; Karla Pelaez, Rosa Jiménez y Maryey Jeri.
+Este es un proyecto que ha sido realizado por; Yohana Avila, Karla Pelaez, Rosa Jiménez y Maryey Jeri.
 
 ### Nuestra situación significativa fue:
 Poder crear vínculos entre personas que disfruten del mismo género literario, para que puedan interactuar entre ellos, a la vez compartir sus gustos y poder recomendar titulos que puedan ser de agrado para otros.
