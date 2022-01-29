@@ -236,14 +236,20 @@ $(document).ready(function () {
         const div = `
           <div class="card bg-dark text-white  mt-3 mx-auto" style="border-radius: 1rem; width: 800px;">
             <div class="card-body">
-              <p>${post.mensaje}</p>
-              <p>Publicado el ${post.fecha} a las ${post.hora}</p>
-              <button data-id="${doc.id}" class="btn btn-success btn-edit-post bi bi-pencil-fill">
-                Editar
-              </button>
-              <button data-id="${doc.id}" class="btn btn-danger btn-delete-post bi bi-trash-fill">
-                Eliminar
-              </button>
+
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">★</button>
+                <div id="myDropdown" class="dropdown-content">
+                <li><button data-id="${doc.id}" class="btn  btn-edit-post bi bi-pencil-fill">Editar</button></li>
+                <li><button data-id="${doc.id}" class="btn  btn-delete-post bi bi-trash-fill">Eliminar</button></li>
+                </div>
+              </div>
+
+              <p class="m">${post.mensaje}</p>
+              <p class="f">Publicado el ${post.fecha} a las ${post.hora}</p>
+              
+              <button id="click">★</button>
+              <div id="output">0</div>
             </div>
           </div>
         `;
@@ -313,6 +319,22 @@ $(function() {
 
   $('#click').click(function(){ count += 1 });
   $('#autoClick').click(function(){ countRate += 1 });
-
-  
 });
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
