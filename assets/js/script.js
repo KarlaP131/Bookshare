@@ -266,8 +266,7 @@ $(document).ready(function () {
             window.alert('Okay, si estas seguro.'); }
 
             const id = e.target.dataset.id;
-            deletePost(id);  
-          
+            deletePost(id);     
         })
       })
       // Agregar escucha a todos los botones edit
